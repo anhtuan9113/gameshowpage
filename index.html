@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Hello</title>
+    <script type="text/javascript"
+            src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js">
+    </script>
 </head>
 <body>
-    <h1>Hello world</h1>
+<cast-media-player></cast-media-player>
+<script>
+    cast.framework.CastReceiverContext.getInstance().start();
+</script>
 </body>
 </html>
